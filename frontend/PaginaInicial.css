@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  body {
+    background-color: #f6fdf7;
+    color: #2e3d31;
+    line-height: 1.6;
+  }
+  
+  header.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #eaf7ec;
+  }
+  
+  .logo-hero {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #3e8e41;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #357a36;
+  }
+  
+  section.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  
+  .sobre .texto {
+    flex: 1;
+  }
+  
+  .sobre .ilustra {
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  section.beneficios {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #f0f9f1;
+    border-radius: 16px;
+    padding: 2rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  section.login-area {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #eaf7ec;
+  }
+  
+  .form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-form {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .form h2 {
+    color: #3e8e41;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #357a36;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

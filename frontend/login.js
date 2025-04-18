@@ -14,8 +14,9 @@ const form = document.getElementById('loginForm');
       const result = await response.json();
 
       if (result.success) {
-        window.location.href = "PaginaInicial.html";
+        window.location.href = "PaginaPrincipal.html";
       } else {
         alert("Usuário ou senha incorretos");
       }
 });
+
