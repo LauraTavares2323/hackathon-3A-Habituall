@@ -2,8 +2,3 @@ ranking d usuarios
 painel de progresso
 metas diarias
 recomepnsas
-
-fazer tipo aquele app de ler livro que a arvore cresce so que de beber agua e outras coisas, tipo um site gamificado que em cada nivel que tu alcança tu recebe um premio
-por exemplo um bichinho nvo tipo desbloqueia um nivel novo do goku (sla pq essa referencia)
-
-fiz só o frontend do login e cadastro e o backend do resto
