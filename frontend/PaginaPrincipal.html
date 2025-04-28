@@ -1,29 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habituall</title>
-    <link rel="stylesheet" href="PaginaPrincipal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habituall</title>
+  <link rel="stylesheet" href="PaginaPrincipal.css">
 </head>
- <body>
-    <p>eu sabo</p>
+
+
+
+<body>
+  <header class="header">
+  <a href="PaginaInicial.html"> <img src="./assents/logo (2).png" alt="Logo Habituall" class="header-logo"></a> 
+  </header>
+  <main>
+  <div class="container">
+    <!-- lado esquerdo -->
     
-      <div class="container">
-        <h2>Beber Água 💧</h2>
-        <p>Meta: 2L por dia</p>
-        <p id="progressoTexto">Você já bebeu 0ml</p>
-    
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" id="barra"></div>
+
+   
+      
+      <div class="exercise-card">
+        <h3>Você se exercitou hoje?</h3>
+        <div class="response-container">
+          <button class="exercise-btn" id="yesBtn" onclick="markExercise('sim')">Sim</button>
+          <button class="exercise-btn" id="noBtn" onclick="markExercise('nao')">Não</button>
         </div>
-    
-        <button onclick="marcar()">Marcar 500ml</button>
+        <p id="exerciseStatus">Não registrado</p>
       </div>
 
-    </body>
-    </html>
-    
-    <script src="PaginaPrincipal.js "></script>
+      <div class="reading-card">
+        <h3>Quantas páginas do livro você leu hoje?</h3>
+        <input type="number" id="pagesRead" min="1" max="50" placeholder="Digite de 1 a 50" />
+        <button onclick="markPages()">Registrar</button>
+        <p id="readingStatus">Não registrado</p>
+      </div>
+
+      <div class="card">
+        <h3>Quantos litros de água você tomou hoje?</h3>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+          <button onclick="markWater()">Marcar 250ml</button>
+        <p id="waterAmount">0L / 2L</p>
+      </div>
+
+
+      
+      
+      <div class="sleep-card">
+        <h3>Quantas horas você dormiu hoje?</h3>
+        
+        <label for="sleepTime">Hora que você foi dormir:</label>
+        <input type="time" id="sleepTime" />
+      
+        <label for="wakeTime">Hora que você acordou:</label>
+        <input type="time" id="wakeTime" />
+      
+        <div class="sleep-progress-container">
+          <div class="sleep-progress-bar" id="sleepProgressBar"></div>
+        </div>
+        
+        <button onclick="calculateSleep()">Calcular Horas Dormidas</button>
+        
+        <p id="sleepAmount">0h / 8h</p>
+      </div>
+
+      <div class="mood-card">
+        <h3>Como você está se sentindo hoje?</h3>
+        <select id="moodSelect">
+          <option value="muito-bem">Muito bem</option>
+          <option value="bem">Bem</option>
+          <option value="mais-ou-menos">Mais ou menos</option>
+          <option value="mal">Mal</option>
+          <option value="muito-mal">Muito mal</option>
+        </select>
+        <button onclick="markMood()">Registrar Humor</button>
+        <p id="moodStatus">Não registrado</p>
+      </div>
+      
+      <div class="outdoor-card">
+        <h3>Quantos minutos você passou ao ar livre hoje?</h3>
+        <input type="number" id="outdoorTime" min="0" placeholder="Digite os minutos" />
+        <button onclick="markOutdoor()">Registrar</button>
+        <p id="outdoorStatus">Não registrado</p>
+      </div>
+      
+      
+    </div>
+
+  </div>
+</main>
+
+<script src="PaginaPrincipal.js"></script>
 </body>
+
 </html>

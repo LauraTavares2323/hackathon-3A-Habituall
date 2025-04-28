@@ -54,8 +54,4 @@ app.post('/cadastro', (req, res) => {
 });
 
 
-app.use('/habitos', habitosRoutes);
-
-
-
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));

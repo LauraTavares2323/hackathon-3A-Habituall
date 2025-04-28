@@ -1,61 +1,73 @@
+*{
+  margin: 0px;
+  gap: 0px;
+}
 body {
-    font-family: 'Rubik', sans-serif;
-  }
-   
-  .hero {
-    background-color: #e9f7ef;
-    text-align: center;
-    padding: 60px 20px;
-  }
-   
-  .logo{
-    width: 150px;
-    margin-bottom: 20px;
-  }
-   
-  .btn-primary {
-    background-color: #28a745;
-    border: none;
-  }
-   
-  .sobre {
-    padding: 60px 20px;
-    background-color: #f8f9fa;
-  }
-   
-  .habitos {
-    max-width: 100%;
-    height: auto;
-  }
-   
-  .beneficios {
-    padding: 60px 20px;
-    text-align: center;
-  }
-   
-  .login-area {
-    background-color: #f1f1f1;
-    padding: 60px 20px;
-  }
-   
-  .form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-   
-  .logo-form {
-    width: 100px;
-    margin: 0 auto 20px;
-    display: block;
-  }
-   
-  footer {
-    background-color: #e9f7ef;
-    text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+header{
+    background-color: #ffffff; /* Fundo branco ou levemente off-white */
     padding: 20px 0;
-  }
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais forte */
+    text-align: center;
+    position: relative;
+    z-index: 10;
   
+}
+
+.hero {
+  background-color: #e1e5e3;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+}
+
+.sobre {
+  padding: 60px;
+  background-color: #f1f1f1;
+}
+
+.habitos {
+  max-width: 100%;
+  height: auto;
+}
+
+.beneficios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.login-area {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-form {
+  width: 100px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+footer {
+  background-color: #e1e5e3;
+  text-align: center;
+  padding: 20px 0;
+}
