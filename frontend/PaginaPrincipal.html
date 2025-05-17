@@ -6,93 +6,78 @@
   <title>Habituall</title>
   <link rel="stylesheet" href="PaginaPrincipal.css">
 </head>
-
-
-
 <body>
-  <header class="header">
-  <a href="PaginaInicial.html"> <img src="./assents/logo (2).png" alt="Logo Habituall" class="header-logo"></a> 
+
+  <header>
+    <a href="index.html">
+      <img src="./assents/logo (2).png" alt="Logo" class="logo">
+    </a>
   </header>
+
   <main>
-  <div class="container">
-    <!-- lado esquerdo -->
-    
+    <div class="caixa-principal">
 
-   
-      
-      <div class="exercise-card">
+      <div class="caixa">
         <h3>Você se exercitou hoje?</h3>
-        <div class="response-container">
-          <button class="exercise-btn" id="yesBtn" onclick="markExercise('sim')">Sim</button>
-          <button class="exercise-btn" id="noBtn" onclick="markExercise('nao')">Não</button>
+        <div class="botoes">
+          <button class="botao-opcao" onclick="exercicio('sim')">Sim</button>
+          <button class="botao-opcao" onclick="exercicio('nao')">Não</button>
         </div>
-        <p id="exerciseStatus">Não registrado</p>
+        <p id="status-exercicio" class="status">Não registrado</p>
       </div>
 
-      <div class="reading-card">
-        <h3>Quantas páginas do livro você leu hoje?</h3>
-        <input type="number" id="pagesRead" min="1" max="50" placeholder="Digite de 1 a 50" />
-        <button onclick="markPages()">Registrar</button>
-        <p id="readingStatus">Não registrado</p>
+      <div class="caixa">
+        <h3>Quantas páginas você leu hoje?</h3>
+        <input type="number" id="input-leitura" min="1" max="50" placeholder="Digite de 1 a 50" />
+        <button onclick="registrarLeitura()">Registrar</button>
+        <p id="status-leitura" class="status">Não registrado</p>
       </div>
 
-      <div class="card">
-        <h3>Quantos litros de água você tomou hoje?</h3>
-        <div class="progress-container">
-          <div class="progress-bar" id="progressBar"></div>
+      <div class="caixa">
+        <h3>Quantos litros de água você tomou?</h3>
+        <div class="barra">
+          <div class="preenchimento" id="barra-agua"></div>
         </div>
-          <button onclick="markWater()">Marcar 250ml</button>
-        <p id="waterAmount">0L / 2L</p>
+        <button onclick="marcarAgua()">+250ml</button>
+        <p id="status-agua" class="status">0L / 2L</p>
       </div>
 
-
-      
-      
-      <div class="sleep-card">
-        <h3>Quantas horas você dormiu hoje?</h3>
-        
-        <label for="sleepTime">Hora que você foi dormir:</label>
-        <input type="time" id="sleepTime" />
-      
-        <label for="wakeTime">Hora que você acordou:</label>
-        <input type="time" id="wakeTime" />
-      
-        <div class="sleep-progress-container">
-          <div class="sleep-progress-bar" id="sleepProgressBar"></div>
+      <div class="caixa">
+        <h3>Horas de sono hoje?</h3>
+        <label for="hora-dormir">Dormiu às:</label>
+        <input type="time" id="hora-dormir">
+        <label for="hora-acordar">Acordou às:</label>
+        <input type="time" id="hora-acordar">
+        <div class="barra">
+          <div class="preenchimento" id="barra-sono"></div>
         </div>
-        
-        <button onclick="calculateSleep()">Calcular Horas Dormidas</button>
-        
-        <p id="sleepAmount">0h / 8h</p>
+        <button onclick="calcularSono()">Calcular</button>
+        <p id="status-sono" class="status">0h / 8h</p>
       </div>
 
-      <div class="mood-card">
-        <h3>Como você está se sentindo hoje?</h3>
-        <select id="moodSelect">
+      <div class="caixa">
+        <h3>Como você está se sentindo?</h3>
+        <select id="humor">
           <option value="muito-bem">Muito bem</option>
           <option value="bem">Bem</option>
-          <option value="mais-ou-menos">Mais ou menos</option>
+          <option value="normal">Mais ou menos</option>
           <option value="mal">Mal</option>
           <option value="muito-mal">Muito mal</option>
         </select>
-        <button onclick="markMood()">Registrar Humor</button>
-        <p id="moodStatus">Não registrado</p>
+        <button onclick="registrarHumor()">Registrar</button>
+        <p id="status-humor" class="status">Não registrado</p>
       </div>
-      
-      <div class="outdoor-card">
-        <h3>Quantos minutos você passou ao ar livre hoje?</h3>
-        <input type="number" id="outdoorTime" min="0" placeholder="Digite os minutos" />
-        <button onclick="markOutdoor()">Registrar</button>
-        <p id="outdoorStatus">Não registrado</p>
+
+      <div class="caixa">
+        <h3>Minutos ao ar livre hoje?</h3>
+        <input type="number" id="tempo-ar" min="0" placeholder="Digite os minutos" />
+        <button onclick="registrarAr()">Registrar</button>
+        <p id="status-ar" class="status">Não registrado</p>
       </div>
-      
-      
+
     </div>
+  </main>
 
-  </div>
-</main>
-
-<script src="PaginaPrincipal.js"></script>
+ <script src="PaginaPrincipal.js"></script>
 </body>
-
 </html>
